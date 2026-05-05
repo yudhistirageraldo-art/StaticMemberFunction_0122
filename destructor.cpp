@@ -13,3 +13,21 @@ public:
     void cetakdata();
     void isidata();
 };
+
+angka::angka(int i){ //constructor
+    panjang = i;
+    arr = new int[i];
+    isidata();
+}
+angka::~angka(){ //destructor
+    cout << endl;
+    cetakdata();
+    delete[] arr;
+    cout << "Alamat Arr Sudah Dilepaskan" << endl;
+}
+
+void angka::cetakdata()
+{
+    
+}
+    
