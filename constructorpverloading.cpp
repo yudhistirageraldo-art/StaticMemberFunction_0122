@@ -2,14 +2,38 @@
 #include <string>
 using namespace std;
 
-class mahasiswa{
-    private:
+class mahasiswa {
+private:
     int nim;
     string nama;
-    public:
+
+public:
     mahasiswa();
-    mahasiswa(int);
-    mahasiswa(string);
+    mahasiswa(int iNim);
+    mahasiswa(string iNama);
     mahasiswa(int iNim, string iNama);
     void cetak();
 };
+
+mahasiswa::mahasiswa() {
+    // konstruktor default (kosong)
+}
+
+mahasiswa::mahasiswa(int iNim) {
+    nim = iNim; // definisi hanya NIM
+}
+
+mahasiswa::mahasiswa(string iNama) {
+    nama = iNama; // definisi hanya NAMA
+}
+
+mahasiswa::mahasiswa(int iNim, string iNama) {
+    nim = iNim; // definisi NIM dan NAMA
+    nama = iNama;
+}
+
+void mahasiswa::cetak() {
+    cout << endl << "Nim = " << nim << endl;
+    cout << "Nama = " << nama << endl;
+}
+
