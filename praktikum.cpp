@@ -50,3 +50,7 @@ int main() {
     cout << "Data Kendaraan:\n";
     k1.tampilkan();
     k2.tampilkan();
+    k3.tampilkan();
+    k4.tampilkan();
+    return 0;
+}
