@@ -10,3 +10,9 @@ class buku{
         }
 };
 
+int main()
+{
+    buku bukunya;
+    cout<<bukunya.setget ("Matemaika");
+    return 0;
+}
